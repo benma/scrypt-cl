@@ -1,0 +1,22 @@
+Name:                scrypt-cl
+Version:             0.1
+Synopsis:            Scrypt Command Line Tool
+License:             BSD3
+License-file:        LICENSE
+Author:              Marko Bencun
+Maintainer:          mbencun@gmail.com
+Category:            Application
+Build-type:          Simple
+Cabal-version:       >= 1.2
+
+
+Executable scrypt-cl
+  Main-is:             Main.hs
+  Build-depends:       base >= 4.5.1.0,
+                       unix,
+                       bytestring >= 0.10.4.0,
+                       base64-bytestring,
+                       binary >= 0.7.1.0,
+                       scrypt,
+                       optparse-applicative
+  Ghc-options:         -O2 -Wall
